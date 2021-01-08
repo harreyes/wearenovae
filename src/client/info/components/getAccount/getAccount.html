@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Información</ion-title>
+    <ion-buttons end>
+      <button (click)="confirmCloseSesion()" ion-button icon-only>
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content background-size background-image>
+
+
+  <ion-grid no-padding>
+    <ion-row padding-horizontal>
+      <ion-col align-self-start col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+        <ion-item transparent margin-top padding-top transparent>
+
+          <h1 style="text-align: center;">Hola ¡{{firstName}} {{lastName}}!</h1>
+        </ion-item>
+
+        <br>
+        <br>
+
+        <h4>Info email {{email}}</h4>
+        <div>
+          <p>escapeBot: {{escapeBot}} </p>
+          <p>id account: {{id}} </p>
+          <p>Balance: {{balance}} </p>
+          <p>Bin: {{bin}} </p>
+        </div>
+
+        <br>
+        <br>
+
+
+        <h4>Info token {{certificateNumber}}</h4>
+        <div>
+          <p>escapeBot: {{escapeBotToken}} </p>
+          <p>id account: {{idToken}} </p>
+          <p>Balance: {{balanceToken}} </p>
+          <p>Bin: {{binToken}} </p>
+          <p>Certificate Number: {{certificateNumber}} </p>
+        </div>
+        <!-- 
+        <h3>Token: {{}}</h3>
+        <div></div> -->
+
+
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

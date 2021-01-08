@@ -1,0 +1,77 @@
+[menu-Background] {
+    background-color: #CCE8DC;
+    color: #383838;
+    ion-label {
+        color: #383838;
+        font-weight: bold !important;
+    }
+}
+
+[header-background-image] {
+    height: 250px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    &::before {
+        content: "";
+    }
+    [noMargin-text] {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+    [center-text] {
+        text-align: center;
+    }
+    [header-text] {
+        padding: 0;
+        z-index: 999;
+        font-weight: bold !important;
+        line-height: 23px;
+        color: #383838;
+    }
+    [header-title] {
+        margin-top: 0px;
+    }
+}
+
+.header-ios {
+    [class^="icon-"]:before,
+    [class*=" icon-"]:before {
+        width: 24px !important;
+        margin-right: 0 !important;
+    }
+}
+
+[main-menu],
+[sub-menu] {
+    [class^="icon-"]:before,
+    [class*=" icon-"]:before {
+        color: theme-colors('textColors', 'accent');
+    }
+    .item-inner {
+        margin-left: 6px !important;
+    }
+    ion-label {
+        font-weight: 300;
+    }
+}
+
+ion-app.md [margin-top], ion-app.md [margin-top] .scroll-content {
+    margin-top: 4px;
+}
+
+.select-md {
+    padding: 14px 3px 7px 0px;
+}
+
+.alert-ios .alert-radio-label{ white-space: normal;}
+.alert-md .alert-radio-label{ white-space: normal}
+.alert-wp .alert-radio-label{ white-space: normal;}
+
+
+.toolbar-title {
+    text-overflow: inherit;
+    white-space: normal;
+ }
